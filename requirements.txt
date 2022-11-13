@@ -4,4 +4,5 @@ black==22.10.0
 click>=8.0
 transformers==4.22.2
 gradio==3.4.0
-torch==1.10.1
+datasets==2.5.2
+evaluate==0.3.0
