@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     with gr.Blocks() as demo:
         gr.Markdown(
-            "<center><h1>Content Sentiment Analysis</h1> A simple Sentiment Analysis Tool</center>"
+            "<center><h1>Comment rating</h1> A Simple Comment Rating Tool</center>"
         )
         with gr.Tab("Review Rating"):
             with gr.Row():
@@ -23,11 +23,11 @@ if __name__ == "__main__":
                         label="Text Content",
                         lines=4,
                         max_lines=100,
-                        placeholder="Analyzing Sentiment...",
+                        placeholder="Analyzing Rating...",
                     )
                     analytics_button = gr.Button("Analyze")
                 text_output = gr.Textbox(
-                    label="Result", lines=10, max_lines=100, placeholder="Sentiment..."
+                    label="Result", lines=10, max_lines=100, placeholder="Rates..."
                 )
         analytics_button.click(
             analytics_emo,
