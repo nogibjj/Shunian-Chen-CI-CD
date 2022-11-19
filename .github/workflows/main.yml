@@ -1,6 +1,6 @@
 name: Python application
 on: 
-  [push]:
+  push:
     branches: ["main"]
 
 permissions:
