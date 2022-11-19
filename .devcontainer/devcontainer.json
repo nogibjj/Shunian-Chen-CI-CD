@@ -56,8 +56,9 @@
 	"remoteUser": "vscode",
 	"features": {
 		"ghcr.io/devcontainers/features/aws-cli:1": {},
-		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {},
-		"ghcr.io/devcontainers-contrib/features/argo-workflows:1": {},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "none"
+		},
 		"ghcr.io/devcontainers/features/docker-from-docker:1": {}
 	}
 }
