@@ -4,6 +4,7 @@ on:
     branches: ["main"]
 
 permissions:
+  id-token: write
   contents: read
 
 jobs:
@@ -42,6 +43,6 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: us-east-1
   
-    - name: deploy
+    - name: Deploy
       run: |
         make deploy
