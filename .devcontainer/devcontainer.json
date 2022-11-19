@@ -53,5 +53,11 @@
 	"postCreateCommand": "virtualenv ~/.venv && echo 'source ~/.venv/bin/activate' >> ~/.bashrc && make install",
 
 	// Comment out to connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {},
+		"ghcr.io/devcontainers-contrib/features/argo-cd:1": {},
+		"ghcr.io/devcontainers-contrib/features/argo-workflows:1": {},
+		"ghcr.io/devcontainers/features/docker-from-docker:1": {}
+	}
 }
