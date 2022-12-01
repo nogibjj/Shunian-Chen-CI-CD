@@ -14,7 +14,7 @@ if __name__ == "__main__":
 
     with gr.Blocks() as demo:
         gr.Markdown(
-            "<center><h1>Comment rating</h1> A Simple Comment Rating Tool</center>"
+            "<center><h1>Comment rating</h1> A Simple Comment Rating Prediction Tool</center>"
         )
         with gr.Tab("Review Rating"):
             with gr.Row():
@@ -35,4 +35,4 @@ if __name__ == "__main__":
             inputs=analytics_input,
             outputs=text_output,
         )
-    demo.launch(debug=True, server_name="0.0.0.0", share=True, server_port=5000)
+    demo.launch(debug=True, server_name="0.0.0.0", server_port=5000)
