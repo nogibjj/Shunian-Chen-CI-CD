@@ -20,7 +20,7 @@ if __name__ == "__main__":
             with gr.Row():
                 with gr.Column(scale=1, min_width=600):
                     analytics_input = gr.Textbox(
-                        label="Text Content",
+                        label="Review Content",
                         lines=4,
                         max_lines=100,
                         placeholder="Analyzing Rating...",
